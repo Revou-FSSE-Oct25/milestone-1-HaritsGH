@@ -3,71 +3,144 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portofolio - Harits Ghiffari Hanif</title>
+    <title>Harits Ghiffari Hanif</title>
 </head>
 <body>
-    <header>
-        <p>Portofolio</p>
-        <p>Harits Ghiffari Hanif</p>
-        <nav> <!-- pindahin ke header kalo udah paham CSS -->
-            <p>Jump to</p>
-            <menu>
-                <li>About Me</li>
-                <li>Projects</li>
-                <li>Contact Me</li>
-            </menu>
+    <header id="page-top">
+        <h1>Harits Ghiffari Hanif</h1>
+        <nav>
+            <span>
+                <a href="#intro">Intro</a>
+                <a href="#about-me">About Me</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact-me">Contact Me</a>
+            </span>
         </nav>
     </header>
     <hr>
+
+    <!-- main -->
     <main>
+        <article>
 
-        <!-- home/nav -->
-        <section> <!-- kasih foto profil, taro teks paragraf di kanan fotonya-->
-            <p>A budding software engineer who tries to make efficient codes.</p>
-        </section>
-        <hr>
+            <!-- section intro -->
+            <section id="intro">
+                <h2>Hi, I'm Harits Ghiffari Hanif</h2>
+                <p>A budding software engineer who tries to make efficient codes. I love a working system — how everything is collaborating to achieve a common goal.</p>
+                <p>I am most curious about understanding how this world is running naturally. Allah's (God's) creation is truly fascinating.</p>
+                <p>I may lack in creativity, but I sure do love mechanism. I believe that while senseable impressions are important, the functions are more important.</p>
+            </section>
+            <hr>
 
-        <!-- section about me -->
-        <section> 
-            <h1>About Me</h1>
-            <p><strong>Harits Ghiffari Hanif</strong> is just an ordinary person with a bachelor's degree in Science majoring in Mathematics.
-                He likes mathematics since he was in middle school.
-                He likes it even more when he attends university.
-                He is trying to help people and himself by applying math to real-world problems.
-            </p>
-            <p>
-                He is a pretty competitive gamer. He enjoys fighting games, especially Under Night In-Birth and Starward, because of how
-                rewarding the highly mechanical (precise control) and awareness-demanding gameplay.
-            </p>
-            <p>
-                He can understands code scripts written in Python and SQL.
-                His experience with it were creating an automated mouse clicker, a numerical computation with mathematical algorithm, some data analysis, and 
-                some basic machine learning implementation.
-            </p>
-            <p>
-                His current goal (as of November 2025) is to recreate one of his favorite game, Fight League by XFlag.
-                He still struggles on implementing the combat system, with the addition of what programming language to use so it would be light for low-end devices.
-            </p>
-        </section>
-        <hr>
+            <!-- section about me -->
+            <section id="about-me"> 
+                <h2>About Me</h2>
+                <p>
+                    I'm just an ordinary person with a bachelor's degree in Science majoring in Mathematics.
+                    I like mathematics since I was in middle school. I like it even more when I attended university.
+                    I am hoping to help people and myself by applying math to real-world problems.
+                </p>
 
-        <!-- section projects -->
-        <section>
-            <h1>Projects</h1>
-            <ul>
-                <li>TBA</li>
-            </ul>
-        </section>
-        <hr>
+                <h3>Experience</h3>
+                <p>
+                    I have 1 year of experience programming in Python.
+                    So far, I have written Python scripts to do mathematical numerical computation by following the algorithm,
+                    analyze data, predict using simple machine learning algorithms, simulate a few game's systems, and
+                    create an automation script to ease grinding in a game.
+                </p>
+                <p>
+                    Currently, I am learning to be a Fullstack Software Engineer.
+                    My goal is to create apps that will ease people's burdens and to recreate a game that has ended its services.
+                </p>
 
-        <!-- section contact me -->
-        <section>
-            <h1>Contact Me</h1>
-            <p>will use a form</p>
-        </section>
-        <br>
+                <h3>Hobbies & Interest</h3>
+                <p>
+                    I am a pretty competitive gamer. I enjoy fighting games, especially Under Night In-Birth and Starward, because of how
+                    rewarding precise control and great awareness feels. I managed to get second place in an online Southeast Asia Under Night In-Birth tournament
+                    filled with some of the best SEA players.
+                </p>
+                <p>
+                    I also like animations, especially those with a science fiction genre. Be it 2D or 3D.
+                    I love smooth animations, so mesmerizing. Most animations I watched are <i>anime</i>-styled. But some western-styled cartoons are also great.
+                </p>
+
+                <h3>Future Plans</h3>
+                <p>
+                    In addition to what I said in <b>Experience</b>, I want to learn Physics so I can make simulations of the real world.
+                    I also want to learn other programming language such as Javascript, C, and C++.
+                </p>
+                <hr>
+            </section>
+            
+
+            <!-- section projects -->
+            <section id="projects">
+                <h2>Projects</h2>
+                <ul>
+                    <li>TBA</li>
+                </ul>
+
+                <hr>
+            </section>
+            
+
+            <!-- section contact me -->
+            <section id="contact-me">
+                <h2>Contact Me</h2>
+                <!-- contact form -->
+                <form id="contact-form">
+                    <!-- sender message info -->
+                    <section>
+                        <fieldset>
+                            <legend><strong>Send an Email</strong></legend>
+                            <label for="sender-name">Name:</label>
+                            <input
+                                type="text"
+                                id="sender-name"
+                                name="sdname"
+                                placeholder="John HTML"
+                                required />
+                            <br>
+                            <br>
+
+                            <label for="sender-email">Email:</label>
+                            <input
+                                type="email"
+                                id="sender-email"
+                                name="sdemail"
+                                placeholder="johnhtml@hotmail.com"
+                                required />
+                            <br>
+                            <br>
+
+                            <label for="message">Message:</label><br />
+                            <textarea
+                                id="message"
+                                name="msg"
+                                row="55"
+                                cols="50"
+                                placeholder="How are you today?"></textarea>
+                            <br>
+                            <br>
+
+                            <input type="reset" value="Reset" />
+                            <input type="submit" value="Send" />
+                        </fieldset>
+                    </section>
+                </form>
+                <hr>
+
+            </section>
+            
+        </article>
+        <aside>
+            <a href="#page-top">Back to top</a>
+        </aside>
     </main>
+
+    <!-- footer -->
     <footer>
+        <br>
         &copy; 2025 Harits Ghiffari Hanif
     </footer>
 </body>
