@@ -6,7 +6,7 @@ This repo is for my web portofolio that I can share with other people. I'm plann
 
 ## Overview
 
-The website (as of 7 November 2025) is made up by only a homepage. The homepage is made up by these sections:
+This is a website that serve as my portofolio. The website (as of 7 November 2025) is made up by only a homepage. The homepage is made up by these sections:
 1. An introduction section to who I am or what kind of a person I am;
 2. A section about my experience, interest, and future plans;
 3. Links to showcase completed projects; and
