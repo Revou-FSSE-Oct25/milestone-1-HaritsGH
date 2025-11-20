@@ -5,101 +5,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Harits Ghiffari Hanif Web Portofolio">
     <title>Harits Ghiffari Hanif - Web Portofolio</title>
+    <link rel="stylesheet" href="style/index.css">
 </head>
 <body>
     <header id="page-top">
-        <h1>Harits Ghiffari Hanif</h1>
+        <div>
+            <h1>Portofolio</h1>
+        </div>
+        
         <nav>
-            <span>
-                <a href="#intro">Intro</a>
-                <a href="#about-me">About Me</a>
-                <a href="#projects">Projects</a>
-                <a href="#contact-me">Contact Me</a>
-            </span>
+            <a href="#intro">Intro</a>
+            <a href="pages/about.html">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact-me">Contact Me</a>
         </nav>
     </header>
-    <hr>
 
     <!-- main -->
     <main>
         <article>
 
             <!-- section intro -->
-            <section id="intro">
-                <h2>Hi, I'm Harits Ghiffari Hanif</h2>
-                <p>A budding software engineer who tries to make efficient codes.</p>
-            </section>
-            <hr>
-
-            <!-- section about me -->
-            <section id="about-me"> 
-                <h2>About Me</h2>
-                <p>
-                    I'm just an ordinary person with a bachelor's degree in Science majoring in Mathematics.
-                    I love a working system — how everything is collaborating to achieve a common goal.
-                    I am most curious about understanding how this world is running naturally. Allah's (God's) creation is truly fascinating.
-                </p>
-                <p>
-                    I may lack creativity, but I sure do love mechanism.
-                </p>
-                <p>
-                    I believe that while senseable impressions are important, the functions are more valueable.
-                </p>
-
-                <h3>Experience</h3>
-                <p>
-                    I have 1 year of experience programming in Python.
-                    So far, I have written Python scripts to do mathematical numerical computation by following the algorithm,
-                    analyze data, predict using simple machine learning algorithms, simulate a few game's systems, and
-                    create an automation script to ease grinding in a game.
-                </p>
-                <p>
-                    Currently, I am learning to be a Fullstack Software Engineer.
-                    My goal is to create apps that will ease people's burdens and to recreate a game that has ended its services.
-                </p>
-
-                <h3>Hobbies & Interest</h3>
-                <p>
-                    I like mathematics since I was in middle school. I like it even more when I attended university.
-                    I am hoping to help people and myself by applying math to real-world problems.
-                </p>
-                <p>
-                    I am a pretty competitive gamer. I enjoy fighting games, especially Under Night In-Birth and Starward, because of how
-                    rewarding precise control and great awareness feels. I managed to get second place in an online Southeast Asia Under Night In-Birth tournament
-                    filled with some of the best SEA players.
-                </p>
-                <p>
-                    I also like animations, especially those with a science fiction genre. Be it 2D or 3D.
-                    I love smooth animations, so mesmerizing. Most animations I watched are <i>anime</i>-styled. But some western-styled cartoons are also great.
-                </p>
-
-                <h3>Future Plans</h3>
-                <p>
-                    In addition to what I said in <b>Experience</b>, I want to learn Physics so I can make simulations of the real world.
-                    I also want to learn other programming language such as Javascript, C, and C++.
-                </p>
-                <hr>
-            </section>
-            
+            <div class="main-section__intro-container">
+                <section id="intro">
+                    <img src="asset/images/profile.jpg" alt="Harits Profile Picture" class="profile-pic">
+                    <div class="profile-desc">
+                        <p class="author-name"><strong>Hi, I'm Harits Ghiffari Hanif</strong></p>
+                        <p class="author-desc">A budding software engineer who tries to make efficient codes.</p>
+                    </div>
+                </section>
+            </div>
 
             <!-- section projects -->
-            <section id="projects">
-                <h2>Projects</h2>
-                <ul>
-                    <li>TBA</li>
-                </ul>
-
-                <hr>
-            </section>
-            
+            <div class="main-section__projects-container">
+                <section id="projects">
+                    <h2>Projects</h2>
+                    <ul>
+                        <li>TBA</li>
+                    </ul>
+    
+                </section>
+            </div>
 
             <!-- section contact me -->
-            <section id="contact-me">
-                <h2>Contact Me</h2>
-                <!-- contact form -->
-                <form id="contact-form">
-                    <!-- sender message info -->
-                    <section>
+            <div class="main-section__contact-me-container">
+                <section id="contact-me">
+                    <h2>Contact Me</h2>
+                    <!-- contact form -->
+                    <form id="contact-form">
+                        <!-- sender message info -->
                         <fieldset>
                             <legend><strong>Send an Email</strong></legend>
                             <label for="sender-name">Name:</label>
@@ -109,9 +63,7 @@
                                 name="sdname"
                                 placeholder="John HTML"
                                 required />
-                            <br>
-                            <br>
-
+    
                             <label for="sender-email">Email:</label>
                             <input
                                 type="email"
@@ -119,9 +71,8 @@
                                 name="sdemail"
                                 placeholder="johnhtml@hotmail.com"
                                 required />
-                            <br>
-                            <br>
-
+    
+    
                             <label for="message">Message:</label><br />
                             <textarea
                                 id="message"
@@ -129,17 +80,14 @@
                                 row="55"
                                 cols="50"
                                 placeholder="How are you today?"></textarea>
-                            <br>
-                            <br>
-
+    
                             <input type="reset" value="Reset" />
                             <input type="submit" value="Send" />
                         </fieldset>
-                    </section>
-                </form>
-                <hr>
-
-            </section>
+                    </form>
+                </section>
+            </div>
+            
             
         </article>
         <aside>
@@ -148,9 +96,11 @@
     </main>
 
     <!-- footer -->
-    <footer>
-        <br>
-        &copy; 2025 Harits Ghiffari Hanif
-    </footer>
+    
+    <div class="footer__container">
+        <footer>
+            &copy; 2025 Harits Ghiffari Hanif
+        </footer>
+    </div>
 </body>
 </html>
